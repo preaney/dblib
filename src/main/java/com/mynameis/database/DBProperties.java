@@ -80,7 +80,7 @@ public class DBProperties {
     protected void load(final String filename) throws IOException {
         log.info("loading DB properties file :" + filename);
         final Properties props = new Properties();
-        props.load(getClass().getResourceAsStream(filename));
+        props.load(getClass().getResourceAsStream("/" + filename));
 
         driver = props.getProperty("driver");
         dbName = props.getProperty("dbName");

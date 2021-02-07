@@ -1,6 +1,10 @@
 package com.mynameis.database;
 
 import java.io.InputStream;
+import java.net.URL;
+import java.net.URLClassLoader;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.Enumeration;
 import java.util.HashMap;
 import java.util.LinkedList;
@@ -115,7 +119,7 @@ public class ConnectionBroker {
     public Map<String, DBProperties> createDBTable() {
         // read properties file w/list of db config files
         // create DBProperties objects and add to Hashtable
-        final String filename = "MasterDB.properties";
+        final String filename = "/MasterDB.properties";
         final Map<String, DBProperties> table = new HashMap<String, DBProperties>();
         try {
             final InputStream is = getClass().getResourceAsStream(filename);
