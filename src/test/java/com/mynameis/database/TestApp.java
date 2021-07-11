@@ -46,7 +46,6 @@ public class TestApp {
         for (final String col : columns) {
             final Object value = rs.getObject(col);
             final String valueStr = value == null ? "" : value.toString();
-            // System.out.printf("Column %s = %s \n", col, valueStr);
             log.info("Column {} = {} ", col, valueStr);
         }
     }
