@@ -1,10 +1,6 @@
 package com.mynameis.database;
 
 import java.io.InputStream;
-import java.net.URL;
-import java.net.URLClassLoader;
-import java.nio.file.Path;
-import java.nio.file.Paths;
 import java.util.Enumeration;
 import java.util.HashMap;
 import java.util.LinkedList;
@@ -14,7 +10,7 @@ import java.util.Properties;
 
 import org.slf4j.Logger;
 
-import com.mynameis.log.LogUtils;
+import com.mynameis.util.log.LogUtils;
 
 public class ConnectionBroker {
 

@@ -1,0 +1,23 @@
+<configuration>
+    <jmxConfigurator />
+    <property name="defaultPattern" value="%date{yyyy-MM-dd HH:mm:ss.SSS} %-5level [%-30.30thread] %-30.30logger{1} %msg%n" />
+ 
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>${defaultPattern}</pattern>
+        </encoder>
+    </appender>
+ 
+    <logger name="org.eclipse.jetty" additivity="false" level="INFO">
+        <appender-ref ref="STDOUT" />
+    </logger>
+ 
+    <logger name="com.chicagotrading.fod.fitting.tracker.TrackerCache" level="TRACE"/>
+    <logger name="SimpleMetricsReportLogger" level="ERROR"/>
+ 
+   
+    <root level="INFO">
+        <appender-ref ref="STDOUT" />
+    </root>
+ 
+</configuration>

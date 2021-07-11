@@ -28,5 +28,8 @@
 	<classpathentry kind="con" path="org.eclipse.buildship.core.gradleclasspathcontainer"/>
 	<classpathentry kind="lib" path="C:/Reaney/development/repo/libraries/slf4j-api-1.7.30.jar" sourcepath="C:/Reaney/development/repo/libraries/slf4j-api-1.7.30.jar"/>
 	<classpathentry kind="lib" path="lib/mysql-connector-java-5.1.34-bin.jar"/>
+	<classpathentry kind="lib" path="lib/utils.jar"/>
+	<classpathentry kind="lib" path="lib/logback-classic-1.2.3.jar"/>
+	<classpathentry kind="lib" path="lib/logback-core-1.2.3.jar"/>
 	<classpathentry kind="output" path="bin/default"/>
 </classpath>

@@ -6,7 +6,7 @@ import java.sql.SQLException;
 
 import org.slf4j.Logger;
 
-import com.mynameis.log.LogUtils;
+import com.mynameis.util.log.LogUtils;
 
 public class DBConnection {
 
